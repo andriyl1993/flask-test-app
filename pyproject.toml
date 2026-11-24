@@ -1,0 +1,26 @@
+[project]
+name = "test-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "andriyl1993@gmail.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "flask (>=3.1.3,<4.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "flask-migrate (>=4.1.0,<5.0.0)",
+    "psycopg[binary] (>=3.3.9,<4.0.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "pydantic (>=2.14.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)"
+]
